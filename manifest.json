@@ -1,0 +1,16 @@
+{
+  "name": "Listening B1 Coach Pro",
+  "short_name": "Listening B1",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#4f46e5",
+  "description": "App para mejorar listening B1 con lecciones, shadowing, dictado y progreso.",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

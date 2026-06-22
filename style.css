@@ -1,0 +1,61 @@
+:root{
+  --bg:#f3f4ff; --card:#ffffff; --text:#111827; --muted:#6b7280;
+  --primary:#4f46e5; --primary2:#7c3aed; --soft:#e0e7ff; --danger:#dc2626;
+}
+.dark{
+  --bg:#111827; --card:#1f2937; --text:#f9fafb; --muted:#c7c7d1;
+  --primary:#7c3aed; --primary2:#4f46e5; --soft:#312e81;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text); font-size:20px;
+}
+.hero{
+  background:linear-gradient(135deg,var(--primary),var(--primary2));
+  color:white; padding:34px 24px; display:flex; justify-content:space-between; gap:16px;
+}
+.badge{letter-spacing:3px;font-size:15px;margin:0 0 10px;opacity:.9}
+h1{font-size:42px;line-height:1.05;margin:0 0 14px}
+h2{font-size:34px;margin:24px 0 16px}
+h3{font-size:26px;margin:0 0 10px}
+.hero p{font-size:22px;max-width:680px}
+.icon-btn{width:66px;height:66px;border:0;border-radius:22px;background:rgba(255,255,255,.15);font-size:30px}
+.app{padding:24px;max-width:920px;margin:auto}
+.dashboard,.practice-card,.lesson-card,.progress-panel,.tip{
+  background:var(--card); border-radius:28px; padding:28px; box-shadow:0 12px 30px rgba(31,41,55,.08); margin-bottom:20px;
+}
+.dashboard{display:flex;justify-content:space-between;align-items:center;gap:18px}
+.streak{background:var(--soft);border-radius:24px;padding:24px;text-align:center;min-width:130px}
+.streak strong{font-size:54px;display:block;color:var(--primary)}
+.streak span{color:var(--muted)}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+.tab,button,.primary{
+  border:0;border-radius:22px;padding:18px 20px;font-size:20px;font-weight:800;
+  background:var(--soft);color:var(--text);text-decoration:none;text-align:center;display:inline-block;
+}
+.tab.active,.primary,#completeBtn,#saveDictation,#startMic{background:var(--primary);color:white}
+.view{display:none}.active-view{display:block}
+.lesson-card h3{line-height:1.15}
+.lesson-card p{color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+textarea{
+  width:100%;min-height:140px;border:2px solid var(--soft);border-radius:20px;
+  padding:18px;font-size:20px;background:var(--bg);color:var(--text);
+}
+.steps{display:grid;gap:14px;margin:18px 0}
+.steps label{background:var(--bg);padding:16px;border-radius:16px}
+input[type="checkbox"]{width:24px;height:24px;vertical-align:middle}
+.feedback,.speech-box{background:var(--bg);border-radius:16px;padding:18px;color:var(--muted)}
+.ring{
+  width:170px;height:170px;border-radius:50%;display:grid;place-items:center;margin:auto;
+  background:conic-gradient(var(--primary) var(--pct,0%), var(--soft) 0);
+}
+.ring span{background:var(--card);width:120px;height:120px;border-radius:50%;display:grid;place-items:center;font-size:32px;font-weight:900}
+.history{padding-left:24px}.history li{margin-bottom:10px}
+.danger{background:#fee2e2;color:var(--danger)}
+footer{text-align:center;padding:32px;color:var(--muted);font-size:16px}
+@media(max-width:560px){
+  body{font-size:18px}.hero{padding:28px 20px}h1{font-size:36px}h2{font-size:30px}
+  .app{padding:18px}.dashboard{align-items:flex-start}.tabs{gap:10px}.tab,button,.primary{font-size:18px}
+}
