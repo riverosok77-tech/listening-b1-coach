@@ -1,11 +1,11 @@
 {
-  "name": "Listening B1 Coach Premium V4",
+  "name": "Listening B1 Coach Premium V5",
   "short_name": "Listening B1",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#050816",
-  "theme_color": "#6d28d9",
-  "description": "PWA para mejorar listening B1 con método, dictado, shadowing, test y progreso.",
+  "theme_color": "#7c3aed",
+  "description": "PWA premium para mejorar listening B1.",
   "icons": [
     {
       "src": "icon.svg",
