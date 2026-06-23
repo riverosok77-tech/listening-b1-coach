@@ -1,11 +1,11 @@
 {
-  "name": "Listening B1 Coach Premium V5",
-  "short_name": "Listening B1",
+  "name": "Listening B1 Coach Elite V6",
+  "short_name": "B1 Coach",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#050816",
   "theme_color": "#7c3aed",
-  "description": "PWA premium para mejorar listening B1.",
+  "description": "Programa elite para mejorar listening B1.",
   "icons": [
     {
       "src": "icon.svg",
